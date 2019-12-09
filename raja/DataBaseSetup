@@ -1,0 +1,4 @@
+dataBaseURL=jdbc:sqlserver://172.16.0.135;databaseName=QA_DB_UI
+dataBaseUserID=sa
+dataBasePassWord=sqlserver#123
+typeofDb=sql

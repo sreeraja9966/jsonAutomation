@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="CalculatorTestCases" parallel="false" verbose="1" >
+
+<!-- #####################TD calculator Verification#############################    --> 
+<test name="TDCalculator" >
+   <parameter name="DepositPeriodE2EFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//DepositPeriodE2EFlow"/>  
+   <parameter name="InstallMentAmountE2eFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//InstallMentAmountE2eFlow"/>  
+   <parameter name="InterestRateE2EFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//InterestRateE2EFlow"/>  
+   <parameter name="MaturityAmountE2EFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//MaturityAmountE2EFlow"/>  
+   <parameter name="MaturityAmountE2EFlowWithOutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//MaturityAmountE2EFlow"/>  
+   <parameter name="InterestRateE2EFlowWithOutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//InterestRateE2EFlow"/>  
+   <parameter name="InstallMentAmountE2eFlowWithOutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//InstallMentAmountE2eFlow"/>  
+   <parameter name="DepositPeriodE2EFlowwithoutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//DepositPeriodE2EFlow"/>  
+    <parameter name="MaturityAmountE2EFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//MaturityAmountE2EFlow"/>  
+   <parameter name="InterestRateE2EFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//InterestRateE2EFlow"/>  
+   <parameter name="InstallMentAmountE2eFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//InstallMentAmountE2eFlow"/>  
+   <parameter name="DepositPeriodE2EFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//DepositPeriodE2EFlow"/>  
+    
+     <classes>             
+      	    <class name="tdCalculator.TdCalculatorTestCases" /> 
+     </classes>
+    </test> 
+
+
+ 
+ 
+ 
+ </suite>

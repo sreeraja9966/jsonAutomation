@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="FDAccountOpenAndAuth" parallel="false" verbose="1" >
+<!-- #####################FD ACCOUNT CREATION############################# -->
+<test name="FDAccount" >
+<parameter name="verifyMaturityDate" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyMaturityDate"/>
+<parameter name="maturityAmountVerification" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//maturityAmountVerification"/>
+<parameter name="verifyCustCategoryInFDOpening" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyCustCategoryInFDOpening"/>
+<parameter name="verifyModelResponse" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyModelResponse"/>
+<parameter name="verifytablesInEntry" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifytablesInEntry"/>
+     <classes>
+              <class name="FDAccountOpening.FDAccountCreationTestCases" />
+       </classes>
+</test>  
+   <!-- #####################FD ACCOUNT Authorization############################# -->
+<test name="FDAccountAuth" >
+<parameter name="fdAuthScreenVerification" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//fdAuthScreenVerification"/>
+<parameter name="modelVerficationOnSubmit" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//modelVerficationOnSubmit"/>
+<parameter name="verifytablesInAuth" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//verifytablesInAuth"/>
+   
+     <classes>
+              <class name="FDAccountOpening.FDAccountAuthTestCases" />
+       </classes>
+</test> 
+ 
+ </suite>

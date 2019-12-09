@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [AdhocLimitTestCases]">
+  <parameter name="adhocSubmitMessageVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitMessageVerification"/>
+  <parameter name="adhocSubmitTableVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitTableVerification"/>
+  <parameter name="ValidateAdhocAuthTableDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthTableDetails"/>
+  <parameter name="ValidateCustInfo" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateCustInfo"/>
+  <parameter name="duplicateEntry" value="//sysnikDataSprintOne//AdhocLimitEntry//duplicateEntry"/>
+  <parameter name="ValidateExpiryDate" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateExpiryDate"/>
+  <parameter name="ValidateAdhocAuthScreenDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthScreenDetails"/>
+  <parameter name="SubmitAdhocLimitAuth" value="//sysnikDataSprintOne//AdhocLimitAuthorization//SubmitAdhocLimitAuth"/>
+  <test name="AdhocLimitEntry">
+    <parameter name="adhocSubmitMessageVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitMessageVerification"/>
+    <parameter name="adhocSubmitTableVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitTableVerification"/>
+    <parameter name="ValidateCustInfo" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateCustInfo"/>
+    <parameter name="duplicateEntry" value="//sysnikDataSprintOne//AdhocLimitEntry//duplicateEntry"/>
+    <parameter name="ValidateExpiryDate" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateExpiryDate"/>
+    <classes>
+      <class name="adhocLimit.AdhocLimitEntryTestCases"/>
+    </classes>
+  </test> <!-- AdhocLimitEntry -->
+  <test name="AdhocLimitAuth">
+    <parameter name="ValidateAdhocAuthTableDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthTableDetails"/>
+    <parameter name="ValidateAdhocAuthScreenDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthScreenDetails"/>
+    <parameter name="SubmitAdhocLimitAuth" value="//sysnikDataSprintOne//AdhocLimitAuthorization//SubmitAdhocLimitAuth"/>
+    <classes>
+      <class name="adhocLimit.AdhocLimitAuthTestCases"/>
+    </classes>
+  </test> <!-- AdhocLimitAuth -->
+</suite> <!-- Failed suite [AdhocLimitTestCases] -->

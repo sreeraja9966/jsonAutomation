@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="customerRelatedTestCases" parallel="false" verbose="1" >
+
+<!-- #####################CUSTOMER CREATION############################# -->
+
+<test name="customerCreation" >
+  <parameter name="customerCreationWithIntroducerName" value="//sysnikDataSprintOne//customerRelated//customerCreation//customerCreationWithIntroducerName"/>
+<parameter name="authorizationCustomerFlow" value="//sysnikDataSprintOne//customerRelated//customerCreation//authorizationCustomerFlow"/>
+  
+    <classes>
+ 		   <class name="customerCreation.CustomerCreationTestCases" />
+    </classes>
+ </test> 
+ 
+ 
+ 
+ 
+ </suite>

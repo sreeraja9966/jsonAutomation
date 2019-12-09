@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extentreports>
+    <configuration>
+    <theme>dark</theme>
+    	
+        <encoding>UTF-8</encoding>
+        <documentTitle>Automation Report</documentTitle> <!-- This title will be displayed as browser title for the page -->
+        <reportName><![CDATA[
+                <img  width="150"  height="48" align="left" vspace="00" src="https://media.licdn.com/dms/image/C4E0BAQEsM8cW9FXCwA/company-logo_200_200/0?e=2159024400&v=beta&t=FrSbu1b-qt0ugu0F09WPcM3lmgSEVrbi3RTZiBgX0jE" />
+            ]]></reportName>
+            
+     
+      <!--  <reportHeadline>AUTOMATION REPORT</reportHeadline>-->
+        <reportHeadline><![CDATA[
+              <span class="report-headline" align="center" style="font-size: 150%;font-weight:bold;background: ;margin-left:20%;position: absolute;">Automation Report</span>
+            ]]></reportHeadline>
+            
+           
+            <dashboard-view><![CDATA[
+              <a class="dashboard-view" style="background-color:red" />
+            ]]></dashboard-view>
+            
+           
+            <test-head><![CDATA[
+             
+             $('#divhtml').find('span').remove()
+             
+             
+            ]]></test-head>
+            
+           
+            <test-status><![CDATA[
+             
+             $('#divhtml').find('span').remove()
+             
+             
+            ]]></test-status>
+            
+            
+            <contents><![CDATA[
+             
+             $('#divhtml').find('h5').remove()
+             
+             
+            ]]></contents>
+         
+            
+           
+        
+        <!-- custom styles -->
+<styles>
+   <![CDATA[
+            .report-name { padding-left: 0px; } .report-name > img { float: left;height: 50;margin-left: -70px;margin-top: 0px;width:150; }
+        ]]>
+               <![CDATA[
+          .blue.darken-2 {display:none; }
+        ]]> 
+         <![CDATA[
+          .nav-right li:last-child {display:none; }
+        ]]> 
+        
+        <![CDATA[
+          element.style {display:none;height:0px; }
+        ]]>
+        
+        <![CDATA[
+          .waves-effect {background-color:red; }
+        ]]>
+         <![CDATA[
+          .heading h5 {font-size: 0px;content: "Joe's Task:"; }
+        ]]>
+        
+         
+</styles>
+ 
+
+
+
+        // allow automatic saving of media files relative to the report
+htmlReporter.config().setAutoCreateRelativePathMedia(true);
+    </configuration>
+     
+</extentreports>
+
+

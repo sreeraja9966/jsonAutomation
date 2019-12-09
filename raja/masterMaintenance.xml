@@ -1,0 +1,65 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" parallel="false" verbose="1" >
+
+<listeners>
+        <listener class-name="listeners.RetryListener"/>
+</listeners>
+  <test name="login" >
+  
+ 
+  <parameter name="locatorFile" value="//masterMaintenanceDataMaintenance//noOfTablesVerification"/>
+   
+  
+    <classes>
+    
+     <class name="sprintOne.MasterMaintenaceTitleVerification"></class>
+     <class name="sprintOne.NumberOfTablesOnHomeScreen" />
+     
+        
+    </classes>
+ </test>
+ <test name="TableTitleVerification" >
+  
+ 
+  
+   <parameter name="locatorFile" value="//masterMaintenanceDataMaintenance//tableTitleVerification"/>
+  
+    <classes>
+    
+     
+     <class name="sprintOne.TableTitleVerification" />
+        
+    </classes>
+ </test>
+ <test name="branchMasterLabelVerification" >
+  
+ 
+  
+   <parameter name="branchMasterlocatorFile" value="//masterMaintenanceDataMaintenance//TableLabelVerification//branchMaster"/>
+   <parameter name="BookingslocatorFile" value="//masterMaintenanceDataMaintenance//TableLabelVerification//Bookings"/>
+<parameter name="sbBranchDef" value="//masterMaintenanceDataMaintenance//TableLabelVerification//sbBranchDef"/>
+<parameter name="gLAccount" value="//masterMaintenanceDataMaintenance//TableLabelVerification//glAccount"/>
+<parameter name="users" value="//masterMaintenanceDataMaintenance//TableLabelVerification//users"/>
+<parameter name="BANKPARAMETERS" value="//masterMaintenanceDataMaintenance//TableLabelVerification//BankParameters"/>
+<parameter name="Customer" value="//masterMaintenanceDataMaintenance//TableLabelVerification//Customer"/>  
+    <classes>
+    
+     
+     <class name="sprintOne.TablesLabelVerification" />
+        
+    </classes>
+ </test>
+
+<!-- <test name="screenVerification">
+  <parameter name="excelName" value="wingslogin.xls"/>
+  <parameter name="sheetName" value="SheetNames2.txt"/>
+  
+    <classes>
+    
+     
+     <class name="usPayments.Login" />
+   
+    </classes>
+  </test>  -->
+  
+ </suite>

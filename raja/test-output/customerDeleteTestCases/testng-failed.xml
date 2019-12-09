@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [customerDeleteTestCases]">
+  <parameter name="customerDeleteModelVerificationOnsubmit" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteModelVerificationOnsubmit"/>
+  <parameter name="customerDeleteAuthTableVerifications" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthTableVerifications"/>
+  <parameter name="customerDeleteDataVerification" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteDataVerification"/>
+  <parameter name="customerDeleteEntryTableVerifications" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteEntryTableVerifications"/>
+  <parameter name="customerDeleteAuthModelVerificationOnsubmit" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthModelVerificationOnsubmit"/>
+  <parameter name="customerDeleteAuthDataVerification" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthDataVerification"/>
+  <test name="customerDelete">
+    <parameter name="customerDeleteModelVerificationOnsubmit" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteModelVerificationOnsubmit"/>
+    <parameter name="customerDeleteAuthTableVerifications" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthTableVerifications"/>
+    <parameter name="customerDeleteDataVerification" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteDataVerification"/>
+    <parameter name="customerDeleteEntryTableVerifications" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteEntryTableVerifications"/>
+    <parameter name="customerDeleteAuthModelVerificationOnsubmit" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthModelVerificationOnsubmit"/>
+    <parameter name="customerDeleteAuthDataVerification" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthDataVerification"/>
+    <classes>
+      <class name="customerCreation.CustomerDeleteTestCases"/>
+    </classes>
+  </test> <!-- customerDelete -->
+</suite> <!-- Failed suite [customerDeleteTestCases] -->

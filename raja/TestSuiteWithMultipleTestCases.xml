@@ -1,0 +1,14 @@
+<suite name="suite of suites">
+    <suite-files>
+    <suite-file path="TestCaseXmlFiles//setUp.xml" />
+     <suite-file path="TestCaseXmlFiles//customerRelatedTestCases.xml" />
+  <!--    <suite-file path="TestCaseXmlFiles//customerDeleteTestCases.xml" />
+     <suite-file path="TestCaseXmlFiles//BlacklistingTestCases.xml" />
+     <suite-file path="TestCaseXmlFiles//savingsAccountCreationTestCases.xml" />
+     <suite-file path="TestCaseXmlFiles//FDAccountAndAuthTestCases.xml" />
+       <suite-file path="TestCaseXmlFiles//CalculatorTestCases.xml" /> 
+        <suite-file path="TestCaseXmlFiles//LienNoting.xml" />  
+       <suite-file path="TestCaseXmlFiles//AdhocLimitTestCases.xml" />
+         <suite-file path="TestCaseXmlFiles//DrawingPowerTextCases.xml" />  -->
+    </suite-files>
+</suite>

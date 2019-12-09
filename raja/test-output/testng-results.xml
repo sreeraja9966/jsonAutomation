@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="2" failed="0" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="customerRelatedTestCases" duration-ms="64249" started-at="2019-12-09T05:04:29Z" finished-at="2019-12-09T05:05:33Z">
+    <groups>
+    </groups>
+    <test name="customerCreation" duration-ms="64249" started-at="2019-12-09T05:04:29Z" finished-at="2019-12-09T05:05:33Z">
+      <class name="customerCreation.CustomerCreationTestCases">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="setUp" is-config="true" duration-ms="364" started-at="2019-12-09T10:34:29Z" finished-at="2019-12-09T10:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="labelVerification(java.lang.String)[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="labelVerification" duration-ms="0" started-at="2019-12-09T10:34:29Z" finished-at="2019-12-09T10:34:29Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'labelVerification' is required by @Test on method labelVerification but has not been marked @Optional or defined
+in C:\Users\sriraja.garlapati\eclipse-workspace\Sysnik\TestCaseXmlFiles\customerRelatedTestCases.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'labelVerification' is required by @Test on method labelVerification but has not been marked @Optional or defined
+in C:\Users\sriraja.garlapati\eclipse-workspace\Sysnik\TestCaseXmlFiles\customerRelatedTestCases.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- labelVerification -->
+        <test-method status="PASS" signature="clickOnCustomerMenu()[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="clickOnCustomerMenu" is-config="true" duration-ms="1" started-at="2019-12-09T10:34:29Z" finished-at="2019-12-09T10:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCustomerMenu -->
+        <test-method status="PASS" signature="customerCreationWithIntroducerName(java.lang.String)[pri:1, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="customerCreationWithIntroducerName" duration-ms="44112" started-at="2019-12-09T10:34:29Z" finished-at="2019-12-09T10:35:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//sysnikDataSprintOne//customerRelated//customerCreation//customerCreationWithIntroducerName]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerCreationWithIntroducerName -->
+        <test-method status="PASS" signature="closingChildBranch()[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="closingChildBranch" is-config="true" duration-ms="0" started-at="2019-12-09T10:35:14Z" finished-at="2019-12-09T10:35:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingChildBranch -->
+        <test-method status="SKIP" signature="customerAuthorizationDataVerification(java.lang.String)[pri:2, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="customerAuthorizationDataVerification" duration-ms="0" started-at="2019-12-09T10:35:14Z" finished-at="2019-12-09T10:35:14Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'customerAuthorizationDataVerification' is required by @Test on method customerAuthorizationDataVerification but has not been marked @Optional or defined
+in C:\Users\sriraja.garlapati\eclipse-workspace\Sysnik\TestCaseXmlFiles\customerRelatedTestCases.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'customerAuthorizationDataVerification' is required by @Test on method customerAuthorizationDataVerification but has not been marked @Optional or defined
+in C:\Users\sriraja.garlapati\eclipse-workspace\Sysnik\TestCaseXmlFiles\customerRelatedTestCases.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:154)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:361)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:451)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerAuthorizationDataVerification -->
+        <test-method status="PASS" signature="customerAuthorization(java.lang.String)[pri:3, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="customerAuthorization" duration-ms="19549" started-at="2019-12-09T10:35:14Z" finished-at="2019-12-09T10:35:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[//sysnikDataSprintOne//customerRelated//customerCreation//authorizationCustomerFlow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customerAuthorization -->
+        <test-method status="PASS" signature="clickOnCustomerMenu()[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="clickOnCustomerMenu" is-config="true" duration-ms="0" started-at="2019-12-09T10:35:14Z" finished-at="2019-12-09T10:35:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnCustomerMenu -->
+        <test-method status="PASS" signature="tearUp()[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="tearUp" is-config="true" duration-ms="215" started-at="2019-12-09T10:35:33Z" finished-at="2019-12-09T10:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearUp -->
+        <test-method status="PASS" signature="closingChildBranch()[pri:0, instance:customerCreation.CustomerCreationTestCases@569cfc36]" name="closingChildBranch" is-config="true" duration-ms="0" started-at="2019-12-09T10:35:33Z" finished-at="2019-12-09T10:35:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingChildBranch -->
+      </class> <!-- customerCreation.CustomerCreationTestCases -->
+    </test> <!-- customerCreation -->
+  </suite> <!-- customerRelatedTestCases -->
+  <suite name="suite of suites" duration-ms="0" started-at="2019-12-09T05:05:34Z" finished-at="2019-12-09T05:05:34Z">
+    <groups>
+    </groups>
+  </suite> <!-- suite of suites -->
+  <suite name="setUp" duration-ms="4" started-at="2019-12-09T05:04:29Z" finished-at="2019-12-09T05:04:29Z">
+    <groups>
+    </groups>
+    <test name="setUp" duration-ms="4" started-at="2019-12-09T05:04:29Z" finished-at="2019-12-09T05:04:29Z">
+      <class name="setUp.SuiteSetUp">
+        <test-method status="PASS" signature="setReport()[pri:0, instance:setUp.SuiteSetUp@12f41634]" name="setReport" is-config="true" duration-ms="18724" started-at="2019-12-09T10:34:10Z" finished-at="2019-12-09T10:34:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReport -->
+        <test-method status="FAIL" signature="tearDownThings()[pri:0, instance:setUp.SuiteSetUp@12f41634]" name="tearDownThings" is-config="true" duration-ms="0" started-at="2019-12-09T10:34:29Z" finished-at="2019-12-09T10:34:29Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at helper.FilloExcelDataGetter.closeExcelConnection(FilloExcelDataGetter.java:69)
+	at setUp.SuiteSetUp.tearDownThings(SuiteSetUp.java:90)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:336)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1240)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownThings -->
+      </class> <!-- setUp.SuiteSetUp -->
+    </test> <!-- setUp -->
+  </suite> <!-- setUp -->
+</testng-results>

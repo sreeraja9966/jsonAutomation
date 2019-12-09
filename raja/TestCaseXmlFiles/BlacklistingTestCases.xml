@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="BlacklistingTestCases" parallel="false" verbose="1" >
+<!-- #####################Black listing Verification#############################  -->
+<test name="BlackListing" >
+   <parameter name="blackListingE2EFlow" value="//sysnikDataSprintOne//blackListingCustomer//blackListingE2EFlow"/>  
+ <parameter name="blackListingAutorizationE2EFlow" value="//sysnikDataSprintOne//blackListingCustomerAutorization//blackListingAutorizationE2EFlow"/>    
+     <classes>             
+      	    <class name="blackListingCustomer.BlackListingCustomerTestCases" /> 
+      	 	<class name="blackListingCustomer.BlackListingCustomerAuthorizationTestCases" />  
+   
+        
+    </classes>
+    </test> 
+   
+ 
+ </suite>

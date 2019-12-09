@@ -1,0 +1,5 @@
+Account No=1
+Transaction Amount=1
+Instrument Type=1
+Instrument Number=2
+Remark=3

@@ -1,0 +1,290 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" parallel="false" verbose="1" >
+
+<test name="setUp" >
+    <classes>
+    <class name="setUp.SuiteSetUp" />
+    </classes>
+ </test>
+ <!-- #####################RD ACCOUNT CREATION#############################  -->
+<test name="RDAccount" >
+<parameter name="verifyMaturityDate" value="//sysnikDataSprintOne//RDAccountOpening//RDEntry//verifyMaturityDate"/>
+<parameter name="verifyModelResponse" value="//sysnikDataSprintOne//RDAccountOpening//RDEntry//verifyModelResponse"/>
+<!-- <parameter name="maturityAmountVerification" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//maturityAmountVerification"/>
+<parameter name="verifyCustCategoryInFDOpening" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyCustCategoryInFDOpening"/>
+<parameter name="verifyModelResponse" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyModelResponse"/>
+<parameter name="verifytablesInEntry" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifytablesInEntry"/>  -->
+     <classes>
+              <class name="rdAccountOpening.RdAccountOpeningTestCases" />
+       </classes>
+</test> 
+ <!-- #####################RD ACCOUNT Authorization#############################  -->
+<test name="RDAccountAuth" >
+<parameter name="RDAuthScreenVerification" value="//sysnikDataSprintOne//RDAccountOpening//RDAuth//RDAuthScreenVerification"/>
+<!-- <parameter name="modelVerficationOnSubmit" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//modelVerficationOnSubmit"/>
+<parameter name="verifytablesInAuth" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//verifytablesInAuth"/>  -->
+   
+     <classes>
+              <class name="rdAccountOpening.RDAccountAuthTestCases" />
+       </classes>
+</test>
+  <!-- #####################FD ACCOUNT CREATION############################# 
+<test name="FDAccount" >
+<parameter name="verifyMaturityDate" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyMaturityDate"/>
+<parameter name="maturityAmountVerification" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//maturityAmountVerification"/>
+<parameter name="verifyCustCategoryInFDOpening" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyCustCategoryInFDOpening"/>
+<parameter name="verifyModelResponse" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifyModelResponse"/>
+<parameter name="verifytablesInEntry" value="//sysnikDataSprintOne//FDAccountOpening//FDEntry//verifytablesInEntry"/>
+     <classes>
+              <class name="FDAccountOpening.FDAccountCreationTestCases" />
+       </classes>
+</test>  -->
+   <!-- #####################FD ACCOUNT Authorization############################# 
+<test name="FDAccountAuth" >
+<parameter name="fdAuthScreenVerification" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//fdAuthScreenVerification"/>
+<parameter name="modelVerficationOnSubmit" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//modelVerficationOnSubmit"/>
+<parameter name="verifytablesInAuth" value="//sysnikDataSprintOne//FDAccountOpening//FDAuth//verifytablesInAuth"/>
+   
+     <classes>
+              <class name="FDAccountOpening.FDAccountAuthTestCases" />
+       </classes>
+</test> -->
+<!-- #####################CUSTOMER CREATION############################# 
+
+<test name="customerCreation" >
+  <parameter name="e2eFlow" value="//sysnikDataSprintOne//customerCreation//e2eFlow"/>
+
+  
+    <classes>
+ 		   <class name="customerCreation.CustomerCreationTestCases" />
+    </classes>
+ </test> -->
+ <!-- #####################SAVINGS ACCOUNT CREATION############################# 
+<test name="SavingsAccount" >
+<parameter name="sbAccountOpeningLabelVerification" value="//sysnikDataSprintOne//savingsAccountOpening//sbAccountOpeningLabelVerification"/>
+   <parameter name="SavingsAccountCreationE2EFlow" value="//sysnikDataSprintOne//savingsAccountOpening//SavingsAccountCreationE2EFlow"/>
+    <parameter name="SavingsAccountAuthorizationE2EFlow" value="//sysnikDataSprintOne//savingsAccountOpening//SavingsAccountAuthorizationE2EFlow"/>
+     <classes>
+              <class name="savingsAccountCreation.SavingsAccountCreationTestCases" />
+       </classes>
+</test>  -->
+
+<!-- #####################Denomination Verification############################# 
+<test name="DenominationVerification" >
+<parameter name="userDenomAmountTotalVerification" value="//sysnikDataSprintOne//denominationVerification//userDenomAmountTotalVerification"/>
+<parameter name="userDenomNoOfNotesVerification" value="//sysnikDataSprintOne//denominationVerification//userDenomNoOfNotesVerification"/>
+<parameter name="userDenomTransferAmountVerification" value="//sysnikDataSprintOne//denominationVerification//userDenomTransferAmountVerification"/>
+     <classes>
+              <class name="denominationVerification.DenominationTestCases" />
+       </classes>
+</test> -->
+
+<!-- #####################Black listing Verification#############################  
+<test name="BlackListing" >
+   <parameter name="blackListingE2EFlow" value="//sysnikDataSprintOne//blackListingCustomer//blackListingE2EFlow"/>  
+ <parameter name="blackListingAutorizationE2EFlow" value="//sysnikDataSprintOne//blackListingCustomerAutorization//blackListingAutorizationE2EFlow"/>    
+     <classes>             
+      	    <class name="blackListingCustomer.BlackListingCustomerTestCases" /> 
+      	 	<class name="blackListingCustomer.BlackListingCustomerAuthorizationTestCases" />  
+   
+        
+    </classes>
+    </test> -->
+   
+<!-- #####################TD calculator Verification#############################    
+<test name="TDCalculator" >
+   <parameter name="DepositPeriodE2EFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//DepositPeriodE2EFlow"/>  
+   <parameter name="InstallMentAmountE2eFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//InstallMentAmountE2eFlow"/>  
+   <parameter name="InterestRateE2EFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//InterestRateE2EFlow"/>  
+   <parameter name="MaturityAmountE2EFlow" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithDiscounting//MaturityAmountE2EFlow"/>  
+   <parameter name="MaturityAmountE2EFlowWithOutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//MaturityAmountE2EFlow"/>  
+   <parameter name="InterestRateE2EFlowWithOutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//InterestRateE2EFlow"/>  
+   <parameter name="InstallMentAmountE2eFlowWithOutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//InstallMentAmountE2eFlow"/>  
+   <parameter name="DepositPeriodE2EFlowwithoutDiscount" value="//sysnikDataSprintOne//tdCalculator//simpleFdCalculationWithOutDiscounting//DepositPeriodE2EFlow"/>  
+    <parameter name="MaturityAmountE2EFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//MaturityAmountE2EFlow"/>  
+   <parameter name="InterestRateE2EFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//InterestRateE2EFlow"/>  
+   <parameter name="InstallMentAmountE2eFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//InstallMentAmountE2eFlow"/>  
+   <parameter name="DepositPeriodE2EFlowCompoundQuaterly" value="//sysnikDataSprintOne//tdCalculator//compoundFDCalculation//DepositPeriodE2EFlow"/>  
+    
+     <classes>             
+      	    <class name="tdCalculator.TdCalculatorTestCases" /> 
+     </classes>
+    </test> --> 
+
+
+<!-- #####################Lien Noting Verification#############################
+
+<test name="LienNoting" >
+
+       <parameter name="customerInfoVerificationInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//customerInfoVerificationInLienNoting"/> 
+     <parameter name="depositDetailsVerificationInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//depositDetailsVerificationInLienNoting"/> 
+          <parameter name="validateModelResponse" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//validateModelResponse"/> 
+       <parameter name="tableVerificationOnSubmitInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//tableVerificationOnSubmitInLienNoting"/> 
+        <parameter name="validateRemaingLienAmount" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//validateRemaingLienAmount"/> 
+     <classes>             
+      	    <class name="lienNoting.LienNotingTestCases" /> 
+     </classes>
+    </test>    -->
+
+<!-- #####################Lien Noting Authorization Verification############################# 
+
+<test name="LienNotingAuthorization" >
+ <parameter name="lienNotingLabelVerification" value="//sysnikDataSprintOne//lienNoting//lienNotingLabelVerification"/>    
+        <parameter name="lienNotingAuthScreenVerifications" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//lienNotingAuthScreenVerifications"/> 
+         <parameter name="onSubmitModelVerificationInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//onSubmitModelVerificationInLienAuth"/>
+           <parameter name="tableVerificationOnSunbitInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//tableVerificationOnSunbitInLienAuth"/>
+    <parameter name="lienNotingRejection" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//lienNotingRejection"/>
+        <parameter name="RejectionTableVerification" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//RejectionTableVerification"/>
+    <classes>             
+      	    <class name="lienNoting.LienNotingAuthorizationTestCases" /> 
+     </classes>
+    </test>  -->
+    
+    
+    
+<!-- #####################Lien Revoke Entry Verification############################# 
+
+<test name="LienNotingRevoke" >
+ 
+        <parameter name="LienRevokeInfoVerification" value="//sysnikDataSprintOne//lienNoting//lienRevokeEntry//LienRevokeInfoVerification"/>
+        <parameter name="modelResponseVerificationinLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeEntry//modelResponseVerificationinLienRevoke"/>
+          <parameter name="tableVerificationsInLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeEntry//tableVerificationsInLienRevoke"/>
+     <classes>             
+      	    <class name="lienNoting.LienRevokeTestCases" /> 
+     </classes>
+    </test>  --> 
+    
+    
+<!-- #####################Lien Revoke Authorization Verification#############################  
+
+<test name="LienNotingRevokeAuth" >
+  
+        <parameter name="LienRevokeInfoVerification" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//LienRevokeInfoVerification"/>
+        <parameter name="modelResponseVerificationinLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//modelResponseVerificationinLienRevoke"/>
+          <parameter name="tableVerificationsInLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//tableVerificationsInLienRevoke"/>
+     <classes>             
+      	    <class name="lienNoting.LienRevokeAuthorizationTestCases" /> 
+     </classes>
+    </test> --> 
+<!-- #####################Adhoc Entry Verification#############################
+<test name="AdhocLimitEntry" >
+   <parameter name="ValidateCustInfo" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateCustInfo"/>  
+     <parameter name="ValidateExpiryDate" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateExpiryDate"/>  
+      <parameter name="adhocSubmitMessageVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitMessageVerification"/>  
+       <parameter name="adhocSubmitTableVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitTableVerification"/>  
+        <parameter name="duplicateEntry" value="//sysnikDataSprintOne//AdhocLimitEntry//duplicateEntry"/>  
+     <classes>             
+      	    <class name="adhocLimit.AdhocLimitEntryTestCases" /> 
+     </classes>
+    </test>   -->
+ <!-- #####################Adhoc Auth Verification############################# 
+<test name="AdhocLimitAuth" >
+   <parameter name="ValidateAdhocAuthScreenDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthScreenDetails"/>
+    <parameter name="SubmitAdhocLimitAuth" value="//sysnikDataSprintOne//AdhocLimitAuthorization//SubmitAdhocLimitAuth"/> 
+     <parameter name="ValidateAdhocAuthTableDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthTableDetails"/>  
+          <classes>             
+      	    <class name="adhocLimit.AdhocLimitAuthTestCases" /> 
+     </classes>
+    </test> -->
+<!-- #####################Drawing Power Submission Entry Verification############################# 
+<test name="DrawingPowerSubmissionEntry" >
+  
+   <parameter name="CustomerDetailsVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//CustomerDetailsVerification"/>
+   <parameter name="ExpiryDateVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ExpiryDateVerification"/> 
+   <parameter name="MarginVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//MarginVerification"/> 
+   <parameter name="ValueCalculationVerificationBasedOnMargin" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValueCalculationVerificationBasedOnMargin"/>
+   <parameter name="ValidateDPArrivedAndDpAllowed" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValidateDPArrivedAndDpAllowed"/>
+   <parameter name="DrawingPowerEntryE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DrawingPowerEntryE2e"/>  
+   <parameter name="DuplicateEntry" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DuplicateEntry"/>
+      <classes>             
+      	    <class name="drawingPower.DrawingPowerEntryTestCases" /> 
+     </classes>
+    </test>   -->
+
+<!-- #####################Drawing Power Submission Entry Auth Verification#############################   
+<test name="DrawingPowerSubmissionEntryAuth" >
+   <parameter name="DrawingPowerEntryAuthLabelVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//dpLabelVerification"/>     
+  <parameter name="DrawingPowerEntryAuthorizationE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//DrawingPowerEntryAuthE2e"/>
+     <parameter name="DPEntryAuthRejection" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//DPEntryAuthRejection"/>
+     <classes>             
+      	    <class name="drawingPower.DrawingPowerEntryAuthorzationTestCases" /> 
+     </classes>
+    </test>  -->
+   
+
+<!-- #####################Drawing Power Submission Cancel Entry Verification#############################  
+<test name="DrawingPowerSubmissionCancelEntry" >
+   <parameter name="verificationOfStockDetailsinDPCancel" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//verificationOfStockDetailsinDPCancel"/>     
+  <parameter name="verifyDPCancelOnSubmitMessages" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//verifyDPCancelOnSubmitMessages"/>
+   <parameter name="tableVerifications" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//tableVerifications"/>
+       <classes>             
+      	    <class name="drawingPower.DrawingPowerCancelEntryTestCases" /> 
+     </classes>
+    </test>  -->
+    
+
+<!-- #####################Drawing Power Submission Cancel Auth Verification############################# 
+<test name="DrawingPowerSubmissionCancelAuth" >
+   <parameter name="verificationOfStockDetailsinDPCancelAuth" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel Auth//verificationOfStockDetailsinDPCancelAuth"/>     
+  <parameter name="verifyDPCancelAuthOnSubmitMessages" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel Auth//verifyDPCancelAuthOnSubmitMessages"/>
+      <classes>             
+      	    <class name="drawingPower.DrawingPowerCancelAuthTestCases" /> 
+     </classes>
+    </test> -->
+<!-- #####################OD Account Opening Verification#############################   
+<test name="ODAccountOpening" >
+   <parameter name="E2E" value="//sysnikDataSprintOne//ODAccountOpening//E2E"/>     
+         <classes>             
+      	    <class name="ODAccountOpening.ODAccountOpeningTestCases" /> 
+     </classes>
+    </test> -->
+<!--  <test name="setUp" >
+    <classes>
+    <class name="currentAccount.SuiteSetUp" />
+    </classes>
+ </test>
+ <test name="currentAccountModification" >
+ <parameter name="labelVerificationFile" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="verificationOfDataWithDB" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="verificationOfModifiedDataInsertionInDB" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="flowWithInvalidAccountNum" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="verificationOfFieldLevelValidation" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="verifyStatusOfaModifiedAccount" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="verifyStatusOfaModifiedAccountAfterAuth" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="verifyStatusOfaModifiedAccountAfterRejection" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="endToEndAuthScenarion" value="//datamaintenance//DepositScreen//scenarioOne"/>
+ <parameter name="endToEndRejectionScenarion" value="//datamaintenance//DepositScreen//scenarioOne"/>
+    <classes>
+            <class name="currentAccount.CurrentAccountModifiaction" />
+    </classes>
+ </test>
+ <test name="currentAccountCreation" >
+   <parameter name="labelVerificationFile" value="//datamaintenance//DepositScreen//scenarioOne"/>
+     <parameter name="verificationOfFieldLevelValidation" value="//datamaintenance//DepositScreen//scenarioOne"/>
+    <classes>
+     <class name="currentAccount.CurrentAccountCreation" />
+    </classes>
+ </test>
+ 
+<test name="TLAccountCreation" >
+   <parameter name="labelVerificationFile" value="//sprint_3_data//TL_Account_Opening//labelVerification"/>
+   <parameter name="e2eFlow" value="//sprint_3_data//TL_Account_Opening//e2eFlow"/>
+        <classes>
+     <class name="tlAccount.TlAccountOpening" />
+    </classes>
+ </test>  
+ 
+ <test name="RDAccountCreation" >
+   <parameter name="labelVerification" value="//sprint_3_data//RD_Account_Opening//labelVerification"/>
+   <parameter name="e2eFlow" value="//sprint_3_data//RD_Account_Opening//e2eFlow"/>
+        <classes>
+     <class name="rdAccount.RdAccountOpening" />
+    </classes>
+ </test>-->
+ 
+ 
+ 
+ 
+ 
+ 
+ </suite>

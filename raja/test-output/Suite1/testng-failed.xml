@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <parameter name="verifyModelResponse" value="//sysnikDataSprintOne//RDAccountOpening//RDEntry//verifyModelResponse"/>
+  <parameter name="RDAuthScreenVerification" value="//sysnikDataSprintOne//RDAccountOpening//RDAuth//RDAuthScreenVerification"/>
+  <parameter name="verifyMaturityDate" value="//sysnikDataSprintOne//RDAccountOpening//RDEntry//verifyMaturityDate"/>
+  <test name="setUp">
+    <classes>
+      <class name="setUp.SuiteSetUp"/>
+    </classes>
+  </test> <!-- setUp -->
+  <test name="RDAccount">
+    <parameter name="verifyModelResponse" value="//sysnikDataSprintOne//RDAccountOpening//RDEntry//verifyModelResponse"/>
+    <parameter name="verifyMaturityDate" value="//sysnikDataSprintOne//RDAccountOpening//RDEntry//verifyMaturityDate"/>
+    <classes>
+      <class name="rdAccountOpening.RdAccountOpeningTestCases"/>
+    </classes>
+  </test> <!-- RDAccount -->
+  <test name="RDAccountAuth">
+    <parameter name="RDAuthScreenVerification" value="//sysnikDataSprintOne//RDAccountOpening//RDAuth//RDAuthScreenVerification"/>
+    <classes>
+      <class name="rdAccountOpening.RDAccountAuthTestCases"/>
+    </classes>
+  </test> <!-- RDAccountAuth -->
+</suite> <!-- Failed suite [Suite1] -->

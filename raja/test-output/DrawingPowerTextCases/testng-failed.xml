@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [DrawingPowerTextCases]">
+  <parameter name="DrawingPowerEntryAuthLabelVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//dpLabelVerification"/>
+  <parameter name="ValidateDPArrivedAndDpAllowed" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValidateDPArrivedAndDpAllowed"/>
+  <parameter name="DrawingPowerEntryAuthorizationE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//DrawingPowerEntryAuthE2e"/>
+  <parameter name="verifyDPCancelAuthOnSubmitMessages" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel Auth//verifyDPCancelAuthOnSubmitMessages"/>
+  <parameter name="CustomerDetailsVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//CustomerDetailsVerification"/>
+  <parameter name="DPEntryAuthRejection" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//DPEntryAuthRejection"/>
+  <parameter name="verificationOfStockDetailsinDPCancel" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//verificationOfStockDetailsinDPCancel"/>
+  <parameter name="verifyDPCancelOnSubmitMessages" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//verifyDPCancelOnSubmitMessages"/>
+  <parameter name="ExpiryDateVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ExpiryDateVerification"/>
+  <parameter name="verificationOfStockDetailsinDPCancelAuth" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel Auth//verificationOfStockDetailsinDPCancelAuth"/>
+  <parameter name="DuplicateEntry" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DuplicateEntry"/>
+  <parameter name="DrawingPowerEntryE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DrawingPowerEntryE2e"/>
+  <parameter name="MarginVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//MarginVerification"/>
+  <parameter name="ValueCalculationVerificationBasedOnMargin" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValueCalculationVerificationBasedOnMargin"/>
+  <parameter name="tableVerifications" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//tableVerifications"/>
+  <test name="DrawingPowerSubmissionEntry">
+    <parameter name="ValidateDPArrivedAndDpAllowed" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValidateDPArrivedAndDpAllowed"/>
+    <parameter name="DuplicateEntry" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DuplicateEntry"/>
+    <parameter name="DrawingPowerEntryE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DrawingPowerEntryE2e"/>
+    <parameter name="CustomerDetailsVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//CustomerDetailsVerification"/>
+    <parameter name="MarginVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//MarginVerification"/>
+    <parameter name="ValueCalculationVerificationBasedOnMargin" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValueCalculationVerificationBasedOnMargin"/>
+    <parameter name="ExpiryDateVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ExpiryDateVerification"/>
+    <classes>
+      <class name="drawingPower.DrawingPowerEntryTestCases"/>
+    </classes>
+  </test> <!-- DrawingPowerSubmissionEntry -->
+  <test name="DrawingPowerSubmissionEntryAuth">
+    <parameter name="DrawingPowerEntryAuthLabelVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//dpLabelVerification"/>
+    <parameter name="DrawingPowerEntryAuthorizationE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//DrawingPowerEntryAuthE2e"/>
+    <parameter name="DPEntryAuthRejection" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry Auth//DPEntryAuthRejection"/>
+    <classes>
+      <class name="drawingPower.DrawingPowerEntryAuthorzationTestCases"/>
+    </classes>
+  </test> <!-- DrawingPowerSubmissionEntryAuth -->
+  <test name="DrawingPowerSubmissionCancelEntry">
+    <parameter name="verificationOfStockDetailsinDPCancel" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//verificationOfStockDetailsinDPCancel"/>
+    <parameter name="verifyDPCancelOnSubmitMessages" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//verifyDPCancelOnSubmitMessages"/>
+    <parameter name="tableVerifications" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel//tableVerifications"/>
+    <classes>
+      <class name="drawingPower.DrawingPowerCancelEntryTestCases"/>
+    </classes>
+  </test> <!-- DrawingPowerSubmissionCancelEntry -->
+  <test name="DrawingPowerSubmissionCancelAuth">
+    <parameter name="verificationOfStockDetailsinDPCancelAuth" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel Auth//verificationOfStockDetailsinDPCancelAuth"/>
+    <parameter name="verifyDPCancelAuthOnSubmitMessages" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Cancel Auth//verifyDPCancelAuthOnSubmitMessages"/>
+    <classes>
+      <class name="drawingPower.DrawingPowerCancelAuthTestCases"/>
+    </classes>
+  </test> <!-- DrawingPowerSubmissionCancelAuth -->
+  <test name="DrawingPowerSubmissionEntry(failed)">
+    <parameter name="ValidateDPArrivedAndDpAllowed" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValidateDPArrivedAndDpAllowed"/>
+    <parameter name="DuplicateEntry" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DuplicateEntry"/>
+    <parameter name="DrawingPowerEntryE2e" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//DrawingPowerEntryE2e"/>
+    <parameter name="CustomerDetailsVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//CustomerDetailsVerification"/>
+    <parameter name="MarginVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//MarginVerification"/>
+    <parameter name="ValueCalculationVerificationBasedOnMargin" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ValueCalculationVerificationBasedOnMargin"/>
+    <parameter name="ExpiryDateVerification" value="//sysnikDataSprintOne//drawingPowerVerification//Drawing Power Entry//ExpiryDateVerification"/>
+    <classes>
+      <class name="drawingPower.DrawingPowerEntryAuthorzationTestCases">
+        <methods>
+          <include name="tearUp"/>
+          <include name="closingChildBranch"/>
+          <include name="setUp"/>
+          <include name="clickMenu"/>
+        </methods>
+      </class> <!-- drawingPower.DrawingPowerEntryAuthorzationTestCases -->
+      <class name="drawingPower.DrawingPowerCancelEntryTestCases">
+        <methods>
+          <include name="tearUp"/>
+          <include name="closingChildBranch"/>
+          <include name="clickMenu"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- drawingPower.DrawingPowerCancelEntryTestCases -->
+      <class name="drawingPower.DrawingPowerCancelAuthTestCases">
+        <methods>
+          <include name="tearUp"/>
+          <include name="setUp"/>
+          <include name="clickMenu"/>
+          <include name="closingChildBranch"/>
+        </methods>
+      </class> <!-- drawingPower.DrawingPowerCancelAuthTestCases -->
+      <class name="drawingPower.DrawingPowerEntryTestCases">
+        <methods>
+          <include name="closingChildBranch"/>
+          <include name="clickMenu"/>
+          <include name="setUp"/>
+          <include name="tearUp"/>
+          <include name="DrawingPowerLabelVerification"/>
+        </methods>
+      </class> <!-- drawingPower.DrawingPowerEntryTestCases -->
+    </classes>
+  </test> <!-- DrawingPowerSubmissionEntry(failed) -->
+</suite> <!-- Failed suite [DrawingPowerTextCases] -->

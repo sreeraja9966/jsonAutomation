@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [customerRelatedTestCases]">
+  <parameter name="authorizationCustomerFlow" value="//sysnikDataSprintOne//customerRelated//customerCreation//authorizationCustomerFlow"/>
+  <parameter name="customerCreationWithIntroducerName" value="//sysnikDataSprintOne//customerRelated//customerCreation//customerCreationWithIntroducerName"/>
+  <test name="customerCreation">
+    <parameter name="authorizationCustomerFlow" value="//sysnikDataSprintOne//customerRelated//customerCreation//authorizationCustomerFlow"/>
+    <parameter name="customerCreationWithIntroducerName" value="//sysnikDataSprintOne//customerRelated//customerCreation//customerCreationWithIntroducerName"/>
+    <classes>
+      <class name="customerCreation.CustomerCreationTestCases"/>
+    </classes>
+  </test> <!-- customerCreation -->
+  <test name="customerCreation(failed)">
+    <parameter name="authorizationCustomerFlow" value="//sysnikDataSprintOne//customerRelated//customerCreation//authorizationCustomerFlow"/>
+    <parameter name="customerCreationWithIntroducerName" value="//sysnikDataSprintOne//customerRelated//customerCreation//customerCreationWithIntroducerName"/>
+    <classes>
+      <class name="customerCreation.CustomerCreationTestCases">
+        <methods>
+          <include name="tearUp"/>
+          <include name="clickOnCustomerMenu"/>
+          <include name="customerAuthorizationDataVerification"/>
+          <include name="setUp"/>
+          <include name="labelVerification"/>
+          <include name="closingChildBranch"/>
+        </methods>
+      </class> <!-- customerCreation.CustomerCreationTestCases -->
+    </classes>
+  </test> <!-- customerCreation(failed) -->
+</suite> <!-- Failed suite [customerRelatedTestCases] -->

@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="customerDeleteTestCases" parallel="false" verbose="1" >
+
+<!-- #####################CUSTOMER DELETION############################# -->
+
+<test name="customerDelete" >
+  <parameter name="customerDeleteDataVerification" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteDataVerification"/>
+<parameter name="customerDeleteModelVerificationOnsubmit" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteModelVerificationOnsubmit"/>
+<parameter name="customerDeleteEntryTableVerifications" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteEntryTableVerifications"/>
+ <parameter name="customerDeleteAuthDataVerification" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthDataVerification"/>
+<parameter name="customerDeleteAuthModelVerificationOnsubmit" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthModelVerificationOnsubmit"/>
+<parameter name="customerDeleteAuthTableVerifications" value="//sysnikDataSprintOne//customerRelated//customerDelete//customerDeleteAuthTableVerifications"/>
+
+  
+    <classes>
+ 		   <class name="customerCreation.CustomerDeleteTestCases" />
+    </classes>
+ </test> 
+ 
+ 
+ 
+ 
+ </suite>

@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" parallel="false" verbose="1" >
+
+ <test name="setUp" >
+    <classes>
+    <class name="currentAccount.SuiteSetUp" />
+    </classes>
+ </test>
+ 
+ <test name="currentAccountCreation" >
+   <parameter name="labelVerificationFile" value="//datamaintenance//DepositScreen//scenarioOne"/>
+     <parameter name="verificationOfFieldLevelValidation" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="verificationOfValidationMessageinCaseOfInvalidCustomer" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="comparisonCustomerInfoWithDb" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="verificationOfAccountNoInSIScreen" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="endToEndFlowWithValidCustomer" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="VerificationOfDataInsertion" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="verifyStatusBeforeAuth" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="verifyStatusAfterAuth" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="verifyStatusAfterRejection" value="//datamaintenance//DepositScreen//scenarioOne"/>
+      <parameter name="verifyAccDetailsInAuthScreen" value="//datamaintenance//DepositScreen//scenarioOne"/>
+    <classes>
+     <class name="currentAccount.CurrentAccountCreation" />
+    </classes>
+ </test>
+ </suite>

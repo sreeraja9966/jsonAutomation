@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="savingsAccountCreationTestCases" parallel="false" verbose="1" >
+<!-- #####################SAVINGS ACCOUNT CREATION#############################  -->
+<test name="SavingsAccount" >
+<parameter name="sbAccountOpeningLabelVerification" value="//sysnikDataSprintOne//savingsAccountOpening//sbAccountOpeningLabelVerification"/>
+   <parameter name="SavingsAccountCreationE2EFlow" value="//sysnikDataSprintOne//savingsAccountOpening//SavingsAccountCreationE2EFlow"/>
+    <parameter name="SavingsAccountAuthorizationE2EFlow" value="//sysnikDataSprintOne//savingsAccountOpening//SavingsAccountAuthorizationE2EFlow"/>
+     <classes>
+              <class name="savingsAccountCreation.SavingsAccountCreationTestCases" />
+       </classes>
+</test> 
+ 
+ </suite>

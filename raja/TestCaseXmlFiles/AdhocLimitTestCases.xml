@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="AdhocLimitTestCases" parallel="false" verbose="1" >
+
+<!-- #####################Adhoc Entry Verification#############################  -->
+<test name="AdhocLimitEntry" >
+   <parameter name="ValidateCustInfo" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateCustInfo"/>  
+     <parameter name="ValidateExpiryDate" value="//sysnikDataSprintOne//AdhocLimitEntry//ValidateExpiryDate"/>  
+      <parameter name="adhocSubmitMessageVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitMessageVerification"/>  
+       <parameter name="adhocSubmitTableVerification" value="//sysnikDataSprintOne//AdhocLimitEntry//adhocSubmitTableVerification"/>  
+        <parameter name="duplicateEntry" value="//sysnikDataSprintOne//AdhocLimitEntry//duplicateEntry"/>  
+     <classes>             
+      	    <class name="adhocLimit.AdhocLimitEntryTestCases" /> 
+     </classes>
+    </test>  
+ <!-- #####################Adhoc Auth Verification############################# -->
+<test name="AdhocLimitAuth" >
+   <parameter name="ValidateAdhocAuthScreenDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthScreenDetails"/>
+    <parameter name="SubmitAdhocLimitAuth" value="//sysnikDataSprintOne//AdhocLimitAuthorization//SubmitAdhocLimitAuth"/> 
+     <parameter name="ValidateAdhocAuthTableDetails" value="//sysnikDataSprintOne//AdhocLimitAuthorization//ValidateAdhocAuthTableDetails"/>  
+          <classes>             
+      	    <class name="adhocLimit.AdhocLimitAuthTestCases" /> 
+     </classes>
+    </test> 
+ 
+ </suite>

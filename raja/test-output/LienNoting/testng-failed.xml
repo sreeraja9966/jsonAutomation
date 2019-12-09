@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [LienNoting]">
+  <parameter name="lienNotingLabelVerification" value="//sysnikDataSprintOne//lienNoting//lienNotingLabelVerification"/>
+  <parameter name="validateModelResponse" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//validateModelResponse"/>
+  <parameter name="tableVerificationsInLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//tableVerificationsInLienRevoke"/>
+  <parameter name="LienRevokeInfoVerification" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//LienRevokeInfoVerification"/>
+  <parameter name="onSubmitModelVerificationInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//onSubmitModelVerificationInLienAuth"/>
+  <parameter name="depositDetailsVerificationInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//depositDetailsVerificationInLienNoting"/>
+  <parameter name="tableVerificationOnSubmitInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//tableVerificationOnSubmitInLienNoting"/>
+  <parameter name="validateRemaingLienAmount" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//validateRemaingLienAmount"/>
+  <parameter name="tableVerificationOnSunbitInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//tableVerificationOnSunbitInLienAuth"/>
+  <parameter name="customerInfoVerificationInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//customerInfoVerificationInLienNoting"/>
+  <parameter name="lienNotingAuthScreenVerifications" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//lienNotingAuthScreenVerifications"/>
+  <parameter name="modelResponseVerificationinLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//modelResponseVerificationinLienRevoke"/>
+  <test name="LienNoting">
+    <parameter name="validateModelResponse" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//validateModelResponse"/>
+    <parameter name="depositDetailsVerificationInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//depositDetailsVerificationInLienNoting"/>
+    <parameter name="tableVerificationOnSubmitInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//tableVerificationOnSubmitInLienNoting"/>
+    <parameter name="validateRemaingLienAmount" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//validateRemaingLienAmount"/>
+    <parameter name="customerInfoVerificationInLienNoting" value="//sysnikDataSprintOne//lienNoting//lienNotingEntry//customerInfoVerificationInLienNoting"/>
+    <classes>
+      <class name="lienNoting.LienNotingTestCases"/>
+    </classes>
+  </test> <!-- LienNoting -->
+  <test name="LienNotingAuthorization">
+    <parameter name="lienNotingLabelVerification" value="//sysnikDataSprintOne//lienNoting//lienNotingLabelVerification"/>
+    <parameter name="onSubmitModelVerificationInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//onSubmitModelVerificationInLienAuth"/>
+    <parameter name="tableVerificationOnSunbitInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//tableVerificationOnSunbitInLienAuth"/>
+    <parameter name="lienNotingAuthScreenVerifications" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//lienNotingAuthScreenVerifications"/>
+    <classes>
+      <class name="lienNoting.LienNotingAuthorizationTestCases"/>
+    </classes>
+  </test> <!-- LienNotingAuthorization -->
+  <test name="LienNotingRevoke">
+    <parameter name="tableVerificationsInLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeEntry//tableVerificationsInLienRevoke"/>
+    <parameter name="LienRevokeInfoVerification" value="//sysnikDataSprintOne//lienNoting//lienRevokeEntry//LienRevokeInfoVerification"/>
+    <parameter name="modelResponseVerificationinLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeEntry//modelResponseVerificationinLienRevoke"/>
+    <classes>
+      <class name="lienNoting.LienRevokeTestCases"/>
+    </classes>
+  </test> <!-- LienNotingRevoke -->
+  <test name="LienNotingRevokeAuth">
+    <parameter name="tableVerificationsInLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//tableVerificationsInLienRevoke"/>
+    <parameter name="LienRevokeInfoVerification" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//LienRevokeInfoVerification"/>
+    <parameter name="modelResponseVerificationinLienRevoke" value="//sysnikDataSprintOne//lienNoting//lienRevokeAuth//modelResponseVerificationinLienRevoke"/>
+    <classes>
+      <class name="lienNoting.LienRevokeAuthorizationTestCases"/>
+    </classes>
+  </test> <!-- LienNotingRevokeAuth -->
+  <test name="LienNotingAuthorization(failed)">
+    <parameter name="lienNotingLabelVerification" value="//sysnikDataSprintOne//lienNoting//lienNotingLabelVerification"/>
+    <parameter name="onSubmitModelVerificationInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//onSubmitModelVerificationInLienAuth"/>
+    <parameter name="tableVerificationOnSunbitInLienAuth" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//tableVerificationOnSunbitInLienAuth"/>
+    <parameter name="lienNotingAuthScreenVerifications" value="//sysnikDataSprintOne//lienNoting//lienNotingAuth//lienNotingAuthScreenVerifications"/>
+    <classes>
+      <class name="lienNoting.LienNotingTestCases">
+        <methods>
+          <include name="setUp"/>
+          <include name="clickMenu"/>
+          <include name="closingChildBranch"/>
+          <include name="tearUp"/>
+        </methods>
+      </class> <!-- lienNoting.LienNotingTestCases -->
+      <class name="lienNoting.LienRevokeTestCases">
+        <methods>
+          <include name="tearUp"/>
+          <include name="setUp"/>
+          <include name="clickMenu"/>
+          <include name="closingChildBranch"/>
+        </methods>
+      </class> <!-- lienNoting.LienRevokeTestCases -->
+      <class name="lienNoting.LienNotingAuthorizationTestCases">
+        <methods>
+          <include name="RejectionTableVerification"/>
+          <include name="setUp"/>
+          <include name="clickMenu"/>
+          <include name="tearUp"/>
+          <include name="lienNotingRejection"/>
+          <include name="closingChildBranch"/>
+        </methods>
+      </class> <!-- lienNoting.LienNotingAuthorizationTestCases -->
+      <class name="lienNoting.LienRevokeAuthorizationTestCases">
+        <methods>
+          <include name="closingChildBranch"/>
+          <include name="setUp"/>
+          <include name="clickMenu"/>
+          <include name="tearUp"/>
+        </methods>
+      </class> <!-- lienNoting.LienRevokeAuthorizationTestCases -->
+    </classes>
+  </test> <!-- LienNotingAuthorization(failed) -->
+</suite> <!-- Failed suite [LienNoting] -->
